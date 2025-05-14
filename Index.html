@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="style/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <nav>
+      <button data-mode="focus" class="active">Pomodoro</button>
+      <button data-mode="short">Pause</button>
+      <button data-mode="long">Longue Pause</button>
+    </nav>
+    <div class="background-selector">
+      <label for="bg-select">Fond :</label>
+      <select id="bg-select">
+        <option value="default">Classique</option>
+        <option value="sunrise">Lever de soleil</option>
+        <option value="peach">Pêche pastel</option>
+        <option value="lavender">Lavande</option>
+        <option value="night">Nuit douce</option>
+      </select>
+    </div>
+    
+
+    <div class="timer" id="timer">25:00</div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #fefaf6, #e9f0ec);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  main {
+    text-align: center;
+  }
+  
+  nav {
+    margin-bottom: 2rem;
+  }
+  
+  nav button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.3rem;
+    cursor: pointer;
+    border-radius: 999px;
+    transition: background 0.2s ease;
+    color: #555;
+  }
+  
+  nav button.active,
+  nav button:hover {
+    background: #fff;
+    box-shadow: 0 0 0 2px #ccc inset;
+  }
+  
+  .timer {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .controls button {
+    background: transparent;
+    color: #444;
+    border: 2px solid #444;
+    padding: 0.5rem 1.5rem;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  
+  .controls button:hover {
+    background: #444;
+    color: #fff;
+  }
+  
+  .background-selector {
+    margin-bottom: 2rem;
+  }
+  
+  .background-selector select {
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background: #fff;
+    color: #333;
+  }
+  
+  /* === Thèmes de fond === */
+  body.bg-default {
+    background: linear-gradient(135deg, #fefaf6, #9ef8c5);
+  }
+  
+  body.bg-sunrise {
+    background: linear-gradient(135deg, #a0b2f9, #f0c789);
+  }
+  
+  body.bg-peach {
+    background: linear-gradient(135deg, #ffd5b3, #f3957b);
+  }
+  
+  body.bg-lavender {
+    background: linear-gradient(135deg, #e6e6fa, #ab8adf);
+  }
+  
+  body.bg-night {
+    background: linear-gradient(135deg, #5e5e97, #21214d);
+    color: #fefefe;
+  }
+  
+  body.bg-night nav button,
+  body.bg-night .controls button {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  body.bg-night nav button.active {
+    box-shadow: 0 0 0 2px #fff inset;
+  }
+  
+  body.bg-night .background-selector select {
+    background: #333;
+    color: #fff;
+    border-color: #555;
+  }
+  
